@@ -11,7 +11,6 @@ categories: nodejs
   nodejs安装包，下载地址：http://nodejs.org/dist/v4.4.2/node-v4.4.2.tar.gz (暂时稳定版本)
 
 2.安装步骤  
-{% highlight shell %}
 	# cat /etc/system-release 
 		CentOS release 6.1 (Final) 
 	# locale 
@@ -22,38 +21,6 @@ categories: nodejs
 	# ./configure --prefix=/usr 
 	# make 
 	# make install 
-{% endhighlight %}
-
-<<<<<<< HEAD
-{% highlight javascript %}
-var a = 1;
-var b = function() {
-	a++;
-	alert(a);
-	var a = 3;
-	a++;
-	alert(a);
-}
-
-b();
-{% endhighlight %}
-
-=======
->>>>>>> develop
-<div>
-	<a href="https://www.baidu.com">百度</a>
-	<button id='btn'>
-		test
-	</button>
-</div>
-
-<script type="text/javascript">
-	var btn = document.getElementById("btn");
-	btn.onclick = function() {
-		alert(1);
-	};
-</script>
-
 
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
 
