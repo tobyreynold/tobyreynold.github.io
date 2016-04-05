@@ -24,6 +24,21 @@ categories: nodejs
 	# make install 
 {% endhighlight %}
 
+3.安装express
+  #npm -g install express forever supervisor
+
+  #sudo npm install -g express-generator
+
+  #express app
+
+  install dependencies:
+  #cd app && npm install
+
+  run the app:
+  #DEBUG=app:* npm start OR npm start
+
+  
+
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
 
 [jekyll]:      http://jekyllrb.com
