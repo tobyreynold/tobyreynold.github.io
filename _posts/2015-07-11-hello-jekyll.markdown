@@ -1,23 +1,30 @@
 ---
 layout: post
-title:  "Welcome to toby!"
-date:   2015-07-11 14:55:07
-categories: jekyll update
+title:  "CentOS 7.0 Install nodejs environment"
+date:   2016-04-05 23:01:07
+categories: nodejs
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.haha!
+1.准备工作
 
-Jekyll also offers powerful support for code snippets:
+  一台sever，配置自己定
+  nodejs安装包，下载地址：http://nodejs.org/dist/v4.4.2/node-v4.4.2.tar.gz (暂时稳定版本)
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+2.安装步骤  
+{% highlight shell %}
+	# cat /etc/system-release 
+		CentOS release 6.1 (Final) 
+	# locale 
+		LANG=en_US.UTF-8 ...
+	# wget http://nodejs.org/dist/v4.4.2/node-v4.4.2.tar.gz
+	# tar zxvf node-v4.4.2.tar.gz 
+	# cd node-v4.4.2.tar.gz 
+	# ./configure --prefix=/usr 
+	# make 
+	# make install 
 {% endhighlight %}
 
+<<<<<<< HEAD
 {% highlight javascript %}
 var a = 1;
 var b = function() {
@@ -31,6 +38,8 @@ var b = function() {
 b();
 {% endhighlight %}
 
+=======
+>>>>>>> develop
 <div>
 	<a href="https://www.baidu.com">百度</a>
 	<button id='btn'>
