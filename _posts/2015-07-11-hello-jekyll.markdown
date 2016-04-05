@@ -37,6 +37,28 @@ categories: nodejs
   run the app:
   #DEBUG=app:* npm start OR npm start
 
+4. sever端搭建git仓库
+
+  在sever端安装好git之后，客户端往服务端push代码会报错，类似如下错误：
+   remote: error: refusing to update checked out branch: refs/heads/master
+   remote: error: By default, updating the current branch in a non-bare repository
+   remote: error: is denied, because it will make the index and work tree inconsistent
+   remote: error: with what you pushed, and will require 'git reset --hard' to match
+   remote: error: the work tree to HEAD.
+   remote: error: 
+   remote: error: You can set 'receive.denyCurrentBranch' configuration variable to
+   remote: error: 'ignore' or 'warn' in the remote repository to allow pushing into
+   remote: error: its current branch; however, this is not recommended unless you
+   remote: error: arranged to update its work tree to match what you pushed in some
+   remote: error: other way.
+   remote: error: 
+   remote: error: To squelch this message and still keep the default behaviour, set
+   remote: error: 'receive.denyCurrentBranch' configuration variable to 'refuse'.
+
+
+   #git config receive.denyCurrentBranch ignore 解决该问题。
+   以后客户端push代码之后，服务端同步更新只要在sever端执行 git pull 就可以更新成最新代码。
+
   
 
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
